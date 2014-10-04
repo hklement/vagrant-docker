@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # using a specific IP.
   config.vm.network 'private_network', ip: '192.168.23.75'
 
-  # Set available memory
+  # Set available memory.
   config.vm.provider 'virtualbox' do |vb|
     vb.memory = 1024
   end
